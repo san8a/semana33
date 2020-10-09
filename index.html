@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="clases.css">
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+<script type="text/javascript">
+	function inicio() {
+		var i=document.getElementById('inicio1');
+		i.className="d2";
+		var o=document.getElementById("inicio");
+		o.className="f";
+		var u=document.getElementById("hola");
+		u.className="i";
+				var x=document.getElementById("hola1");
+		x.className="i2";
+				var y=document.getElementById("hola2");
+		y.className="i3";
+		var f=document.getElementById("hola3");
+		f.className="i4";
+	}
+
+function fin() {
+	var i=document.getElementById('inicio').innerHTML="Fin";
+		i.className="d1";
+		var p=document.getElementById('inicio1');
+		p.className="f";
+		var j=document.getElementById("inicio2").innerHTML="FIN";
+		var p=document.getElementById("hola");
+		p.className="n";
+		var l=document.getElementById("hola1");
+		l.className="n";
+		var ñ=document.getElementById("hola2");
+		ñ.className="n";
+		var d=document.getElementById("hola3");
+		d.className="n";
+			
+}
+function myfunction() {
+	var a=document.getElementById("hola").className="i1p";
+
+    document.getElementById('hongo').play();
+
+}
+function myfunction1() {
+	var w=document.getElementById("hola1").className="i2p";
+
+    document.getElementById('gotita').play();
+
+}
+function myfunction2() {
+	var q=document.getElementById("hola2").className="i3p";
+
+    document.getElementById('arbusto').play();
+
+}
+function myfunction3() {
+	var b=document.getElementById("hola3").className="i4p";
+
+    document.getElementById('arbol').play();
+
+}
+</script>
+<title>El Bosque encantado</title>
+</head>
+<body bgcolor="2F8FF5">
+<div class="d1">EL BOSQUE ENCANTADO</div>
+
+
+<audio src="hb.mp3" preload="" id="hongo"></audio>
+<audio src="gota.ogg" preload="" id="gotita"></audio>
+<audio src="lasern.mp3" preload="" id="arbusto"></audio>
+<audio src="campanillas.mp3" preload="" id="arbol"></audio>
+
+
+<div class="d21" id="inicio">Bienvenido</div>
+<div class="d21" id="inicio1"><div id="hola" onclick="myfunction()" class="n"></div>
+<div id="hola1" onclick="myfunction1()" class="n"></div>
+<div id="hola2" onclick="myfunction2()" class="n"></div>
+<div id="hola3" onclick="myfunction3()" class="n"></div></div>
+
+<div class="d21" id="inicio2"></div>
+
+
+
+<button onclick="inicio()" class="b1">INICIO</button>
+
+<button onclick="fin()" class="b2">FINAL</button>
+
+</body>
+</html>
